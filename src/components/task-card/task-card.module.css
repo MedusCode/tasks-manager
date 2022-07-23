@@ -1,0 +1,49 @@
+.card {
+  display: inline-block;
+  box-sizing: border-box;
+  width: 100%;
+  background-color: #FFFFFF;
+  border: 1px solid #EBEBEB;
+  box-shadow: 0 4px 15px rgba(44, 44, 44, 0.05);
+  border-radius: 12px;
+  padding: 25px 20px;
+  margin-bottom: 30px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.title {
+  font-weight: 800;
+  font-size: 28px;
+}
+
+.iconContainer {
+  width: 32px;
+  height: 32px;
+  background-color: #F2F3FF;
+  border: 1px solid #EBEBEB;
+  border-radius: 6px;
+}
+
+.description {
+  color: #575767;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.line {
+  height: 1px;
+  background-color: #EBEBEB;
+  border: none;
+  margin: 12px 0;
+}
+
+.toDoContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
