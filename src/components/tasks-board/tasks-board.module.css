@@ -1,12 +1,13 @@
 .tasksBoard {
   background-color: #E5E5E5;
   padding: 25px 20px;
-  column-count: 3;
+  column-count: 2;
 }
 
 .wrapper {
-  width: 50vw;
+  width: 740px;
   height: 80vh;
   overflow: auto;
   border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(44, 44, 44, 0.05);
 }
