@@ -1,0 +1,65 @@
+.toDo {
+  display: flex;
+  width: fit-content;
+  max-width: 100%;
+  gap: 7px;
+  align-items: center;
+  cursor: pointer;
+}
+
+.checkboxContainer {
+  display: block;
+  position: relative;
+  user-select: none;
+  cursor: pointer;
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+}
+
+.checkbox {
+  position: absolute;
+  width: 0;
+  height: 0;
+  cursor: pointer;
+}
+
+.customCheckbox {
+  box-sizing: border-box;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #FBFBFB;
+  border: 1px solid #DADADA;
+  border-radius: 3px;
+  background-image: url("../../assets/images/checkbox/checkmark.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 0;
+  transition: 0.2s ease-in-out;
+}
+
+.checkbox:focus-visible ~ .customCheckbox {
+  border-color: #1236b7;
+}
+
+.checkbox:checked ~ .customCheckbox {
+  background-size: 70%;
+}
+
+.checkbox:hover ~ .customCheckbox {
+  border-color: rgba(87, 87, 103, 0.69);
+}
+
+.toDoText {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  user-select: none;
+  white-space: nowrap;
+
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

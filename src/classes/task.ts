@@ -1,12 +1,8 @@
 import img from '../assets/images/icons/rocket.png';
 import { nanoid } from "nanoid";
+import ToDo from "./to-do";
 
-interface IToDo {
-  task: string;
-  isDone: boolean;
-}
-
-interface ITag {
+export interface ITag {
   name: string;
   color: string; //TODO: colors
 }
@@ -22,7 +18,7 @@ export default class Task {
   name: string;
   description: string;
   tags: Array<ITag>;
-  toDo: Array<IToDo>;
+  toDo: Array<ToDo>;
   icon: typeof img;
   theme: TaskTheme;
   dates: Array<Date>;
@@ -31,7 +27,7 @@ export default class Task {
     name: string,
     description: string,
     tags: Array<ITag>,
-    toDo: Array<IToDo>,
+    toDo: Array<ToDo>,
     icon: typeof img,
     theme: TaskTheme,
     dates: Array<Date>) {
