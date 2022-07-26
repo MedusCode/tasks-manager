@@ -48,16 +48,28 @@
 }
 
 .description {
-  line-clamp: 3;
   overflow: hidden;
   text-overflow: ellipsis;
   display: -webkit-box;
-  -webkit-line-clamp: 5;
+  -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
   color: #575767;
   font-weight: 500;
   font-size: 14px;
+  line-height: 122%;
   overflow-wrap: anywhere;
+  margin-bottom: 5px;
+  transition: height 0.2s ease-in-out;
+}
+
+@media screen and (max-width: 767px) {
+  .description {
+    font-size: 20px;
+  }
+}
+
+.fullDescription {
+  -webkit-line-clamp: unset;
 }
 
 .line {

@@ -1,0 +1,36 @@
+.button {
+  display: flex;
+  padding: 5px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  margin: 0 auto;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.button:hover {
+  opacity: 0.8;
+}
+
+.leftLine {
+  background-color: #575767;
+  height: 3px;
+  width: 18px;
+  border-radius: 5px;
+  transform: rotate(20deg);
+  transition: transform 0.2s ease-in-out;
+}
+
+.rightLine {
+  composes: leftLine;
+  margin-left: -3px;
+  transform: rotate(-20deg);
+}
+
+.opened .leftLine {
+  transform: rotate(-20deg);
+}
+
+.opened .rightLine {
+  transform: rotate(20deg);
+}
